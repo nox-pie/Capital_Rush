@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--card-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: var(--background-color);
+  text-decoration: none;
+}

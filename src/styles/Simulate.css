@@ -1,0 +1,90 @@
+.simulate {
+  padding: 20px;
+}
+
+.simulate-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--primary-color), darkblue);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.simulate-header h1 {
+  color: white;
+}
+
+.trading-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.chart-section {
+  background: var(--card-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 500px;
+}
+
+.trading-panel > div {
+  background: var(--card-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-buy {
+  background-color: var(--primary-color);
+}
+
+.btn-sell {
+  background-color: var(--secondary-color);
+}
+
+.holding-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.profit { color: var(--primary-color); }
+.loss { color: var(--secondary-color); }
+
+@media (max-width: 1024px) {
+  .trading-dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-section {
+    height: 400px;
+  }
+}

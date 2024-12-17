@@ -1,0 +1,63 @@
+.learn {
+  padding-bottom: 60px;
+}
+
+.learn-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--primary-color), darkblue);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.learn-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.tutorials {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tutorials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tutorial-card {
+  background: var(--card-color);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutorial-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.tutorial-card p {
+  color: var(--muted-text);
+  margin-bottom: 20px;
+}
+
+.tutorial-meta {
+  display: flex;
+  gap: 20px;
+  color: var(--muted-text);
+  font-size: 0.9em;
+}
